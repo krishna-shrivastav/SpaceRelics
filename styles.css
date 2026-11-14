@@ -178,3 +178,308 @@ model-viewer{width:100%;height:490px;background:radial-gradient(ellipse at 50% 4
     object-fit: cover;
     border-radius: 50%;
 }
+
+
+/* =========================================
+   SPACE RELICS — MOBILE RESPONSIVE FIX
+   ========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+video,
+canvas,
+iframe {
+  max-width: 100%;
+}
+
+.brand {
+  min-width: 0;
+}
+
+.brand-mark {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+}
+
+header {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+  gap: 10px;
+}
+
+header nav {
+  min-width: 0;
+}
+
+/* Main content */
+main,
+section,
+.container,
+.page-container {
+  min-width: 0;
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    min-height: 62px;
+  }
+
+  .brand {
+    gap: 7px;
+    font-size: 14px;
+  }
+
+  .brand small {
+    font-size: 7px;
+    letter-spacing: .5px;
+  }
+
+  .brand-mark {
+    width: 34px;
+    height: 34px;
+  }
+
+  /* Homepage hero */
+  .hero {
+    padding: 46px 18px 28px !important;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(35px, 10vw, 48px);
+    line-height: .99;
+    letter-spacing: -1.8px;
+    overflow-wrap: break-word;
+  }
+
+  .hero p {
+    font-size: 14px;
+    line-height: 1.7;
+    max-width: 100%;
+  }
+
+  .hero img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* General grids */
+  .grid,
+  .stats-grid,
+  .mission-grid,
+  .relic-grid,
+  .info-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100%;
+  }
+
+  /* Prevent child overflow */
+  .grid > *,
+  .stats-grid > *,
+  .mission-grid > *,
+  .relic-grid > *,
+  .info-grid > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  /* Buttons */
+  button,
+  .btn,
+  .outline {
+    max-width: 100%;
+  }
+}
+
+/* =========================================
+   MODAL / RELIC DETAILS RESPONSIVE FIX
+   ========================================= */
+
+dialog,
+[role="dialog"],
+.modal,
+.modal-content,
+.relic-modal,
+.relic-detail-modal,
+.detail-modal,
+.modal-panel {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+dialog,
+[role="dialog"],
+.modal,
+.relic-modal,
+.relic-detail-modal,
+.detail-modal,
+.modal-panel {
+  overflow-x: hidden;
+}
+
+dialog {
+  width: min(900px, calc(100vw - 32px));
+  max-height: 90dvh;
+  overflow-y: auto;
+}
+
+@media (max-width: 600px) {
+
+  dialog,
+  [role="dialog"],
+  .modal,
+  .relic-modal,
+  .relic-detail-modal,
+  .detail-modal,
+  .modal-panel {
+    width: calc(100vw - 24px) !important;
+    max-width: calc(100vw - 24px) !important;
+    min-width: 0 !important;
+    max-height: 88dvh !important;
+    margin: auto;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    padding: 18px !important;
+    border-radius: 12px;
+  }
+
+  /* Modal heading */
+  dialog h1,
+  dialog h2,
+  [role="dialog"] h1,
+  [role="dialog"] h2,
+  .modal h1,
+  .modal h2,
+  .relic-modal h1,
+  .relic-modal h2,
+  .detail-modal h1,
+  .detail-modal h2 {
+    font-size: clamp(23px, 7vw, 30px) !important;
+    line-height: 1.2 !important;
+    overflow-wrap: anywhere;
+    max-width: 100%;
+  }
+
+  /* Modal paragraphs */
+  dialog p,
+  [role="dialog"] p,
+  .modal p,
+  .relic-modal p,
+  .detail-modal p {
+    font-size: 13px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+  }
+
+  /* Modal grids: always one column */
+  dialog .grid,
+  dialog .info-grid,
+  dialog .stats-grid,
+  [role="dialog"] .grid,
+  [role="dialog"] .info-grid,
+  [role="dialog"] .stats-grid,
+  .modal .grid,
+  .modal .info-grid,
+  .relic-modal .grid,
+  .relic-modal .info-grid,
+  .detail-modal .grid,
+  .detail-modal .info-grid {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+
+  /* Individual information cards */
+  dialog .grid > *,
+  [role="dialog"] .grid > *,
+  .modal .grid > *,
+  .relic-modal .grid > *,
+  .detail-modal .grid > * {
+    width: 100%;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    overflow-wrap: anywhere;
+  }
+
+  /* Long technical text */
+  dialog *,
+  [role="dialog"] *,
+  .modal *,
+  .relic-modal *,
+  .detail-modal * {
+    max-width: 100%;
+  }
+
+  /* Close button */
+  dialog button,
+  [role="dialog"] button,
+  .modal .close,
+  .relic-modal .close,
+  .detail-modal .close {
+    flex-shrink: 0;
+  }
+
+  /* Images */
+  dialog img,
+  [role="dialog"] img,
+  .modal img,
+  .relic-modal img,
+  .detail-modal img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/* Small devices */
+@media (max-width: 380px) {
+
+  dialog,
+  [role="dialog"],
+  .modal,
+  .relic-modal,
+  .detail-modal {
+    padding: 14px !important;
+  }
+
+  .hero {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+  }
+}
