@@ -1,0 +1,19 @@
+{
+  "product": "SPACE RELICS",
+  "version": "2.0",
+  "edition": "Advanced Interactive Space Heritage Museum",
+  "modules": [
+    "V1 museum archive, filters, search, timeline, story mode, quiz, matching game, comparison and classroom prompts",
+    "Interactive 3D Moon and Mars globes with mission markers",
+    "NASA-hosted Apollo Lunar Module GLB viewer",
+    "Apollo Lunar Module engineering system inspector",
+    "Live NASA Image and Video Library search"
+  ],
+  "external_services": {
+    "three_js": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "model_viewer": "https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js",
+    "apollo_glb": "https://assets.science.nasa.gov/content/dam/science/cds/3d/resources/model/apollo-lunar-module/Apollo%20Lunar%20Module.glb",
+    "nasa_images_api": "https://images-api.nasa.gov/search"
+  },
+  "accuracy_note": "Planet globes are stylized procedural 3D visualizations, not precision elevation models. Mission coordinates are rounded educational references."
+}

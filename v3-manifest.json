@@ -1,0 +1,32 @@
+{
+  "name": "SPACE RELICS",
+  "version": "3.0",
+  "type": "static client-side educational web application",
+  "included": [
+    "V1 archive, timeline, stories, quiz, comparison and student learning modules",
+    "V2 interactive 3D Moon/Mars globe with mission markers",
+    "V2 NASA-hosted Apollo Lunar Module 3D model and component engineering inspector",
+    "NASA image archive search",
+    "Mission Control searchable mission registry",
+    "LOLA/MOLA planetary science dataset portal",
+    "NASA APOD live feature",
+    "Local research notebook, bookmarks and JSON export",
+    "Student expedition planner with copy/download",
+    "Ten-question interactive assessment and locally stored best score",
+    "PWA manifest and service worker for offline shell caching"
+  ],
+  "storage": "Browser localStorage only; no login, server database, cross-device sync or cloud backups.",
+  "external_dependencies": [
+    "Three.js via jsDelivr CDN",
+    "Google model-viewer via unpkg CDN",
+    "NASA hosted Apollo Lunar Module GLB",
+    "NASA Image and Video Library API",
+    "NASA Science APOD WordPress endpoint",
+    "NASA/USGS/ASU/PDS dataset portals"
+  ],
+  "scientific_limitations": [
+    "Planet globes are schematic procedural educational visualizations, not precision DEM terrain models.",
+    "LOLA/MOLA DEM files are linked but not bundled; some files are multi-gigabyte.",
+    "Mission facts are summaries and should be verified against linked primary sources for formal publication."
+  ]
+}

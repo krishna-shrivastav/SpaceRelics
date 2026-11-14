@@ -1,0 +1,10 @@
+{
+  "name": "SPACE RELICS \u2014 Space Heritage Museum",
+  "short_name": "SPACE RELICS",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#091321",
+  "theme_color": "#091321",
+  "description": "Interactive space heritage museum, mission dossiers and learning labs.",
+  "icons": []
+}

@@ -1,0 +1,15 @@
+[
+ {"id":"apollo11","name":"Apollo 11 Lunar Module Descent Stage","world":"Moon","year":1969,"mission":"Apollo 11","status":"Historical surface artifact","location":"Sea of Tranquility","coordinates":"0.674° N, 23.473° E (rounded reference)"},
+ {"id":"alsep","name":"Apollo Lunar Surface Experiments","world":"Moon","year":1969,"mission":"Apollo 12–17","status":"Historical surface artifact"},
+ {"id":"retro","name":"Lunar Laser Ranging Retroreflector","world":"Moon","year":1969,"mission":"Apollo 11 / 14 / 15","status":"Scientific legacy"},
+ {"id":"surveyor","name":"Surveyor Lunar Lander","world":"Moon","year":1966,"mission":"Surveyor 1–7","status":"Historical surface artifact"},
+ {"id":"lrv","name":"Lunar Roving Vehicle","world":"Moon","year":1971,"mission":"Apollo 15, 16 and 17","status":"Historical surface artifact"},
+ {"id":"viking1","name":"Viking 1 Lander","world":"Mars","year":1976,"mission":"Viking 1","status":"Mission ended"},
+ {"id":"sojourner","name":"Sojourner Rover","world":"Mars","year":1997,"mission":"Mars Pathfinder","status":"Mission ended"},
+ {"id":"spirit","name":"Spirit Rover","world":"Mars","year":2004,"mission":"Mars Exploration Rover A","status":"Mission ended"},
+ {"id":"opportunity","name":"Opportunity Rover","world":"Mars","year":2004,"mission":"Mars Exploration Rover B","status":"Mission ended"},
+ {"id":"insight","name":"InSight Lander","world":"Mars","year":2018,"mission":"Mars InSight","status":"Mission ended"},
+ {"id":"ingenuity","name":"Ingenuity Mars Helicopter","world":"Mars","year":2021,"mission":"Mars 2020","status":"Mission ended"},
+ {"id":"perseverance","name":"Perseverance Rover","world":"Mars","year":2021,"mission":"Mars 2020","status":"Operational"},
+ {"id":"voyager1","name":"Voyager 1","world":"Deep Space","year":1977,"mission":"Voyager","status":"Deep-space mission"}
+]
